@@ -1,0 +1,266 @@
+
+.header_menu {
+  position: absolute;
+  width: 100%;
+  z-index: 998;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:  20px 20px 20px 40px;
+
+}
+
+.menu_category-nav .category_nav-list{
+  flex-wrap: wrap;
+}
+
+.header_slider {
+  z-index: 997;
+}
+.menu_icon-img {
+  width: 160px;
+}
+.category_nav-list,
+.category_section-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.category_nav-item,
+.category_section-item {
+  padding: 0 20px;
+  line-height: 3rem;
+}
+
+.catergory_nav-link,
+.category_section-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+.category_section-link {
+  font-size: 1.8rem !important;
+}
+.catergory_nav-link:hover,
+.category_section-link:hover {
+  color: var(--hv-primary-color) !important;
+}
+.search-box-wrapper {
+}
+.category_section-item:first-child:hover  {
+  z-index: 999;
+}
+.category_section-item:nth-child(3) .category_section-link {
+  display: flex;
+}
+
+.category_section-item:first-child:hover  .search-box{
+  opacity: 1;
+  visibility: visible;
+}
+.category_section-item:first-child:hover .search-up-triangle {
+  visibility: visible;
+}
+.search-box {
+  width: 58rem;
+  min-height: 12rem;
+  visibility: hidden;
+
+}
+
+.category_section-item:nth-child(3):hover .cart-box{
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.search-form-wrapper {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.search-up-triangle {
+  right: 13.2rem;
+  visibility: hidden;
+}
+.search-inner-triangle {
+  left: -1rem;
+
+
+}
+.search-form {
+  position: relative;
+  flex-grow: 1;
+}
+.search-form-input {
+  width: 100%;
+  height: 3.8rem;
+  border: 1px solid var(--text-color);
+  opacity: 0.4;
+  padding: 0 1.2rem;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: var(--move-search);
+}
+.icon-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 1rem 0 0;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.search-form-icon {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: var(--move-search);
+}
+
+.cart-box {
+  min-width: 320px;
+  min-height: 120px;
+  visibility: visible;
+}
+.cart-empty-label {
+  opacity: 0.5;
+  font-size: 1.6rem;
+}
+.cart-triangle {
+ visibility:hidden;
+ opacity: 1;
+  right: 1.6rem;
+  
+}
+.cart-inner-triangle {
+  left: -1rem;
+}
+.category_section-item:nth-child(2) .category_section-link {
+  position: relative;
+}
+.category_section-item:nth-child(3) .cart-triangle {
+  visibility: visible;
+}
+.login-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.login-hidden:focus ~ .login_form-wrapper {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+.cart_product-image {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+.cart-bill {
+  padding: 0 16px 16px 16px;
+  width: 100%;
+
+}
+.cart-bill-wrapper {
+  height: 100%;
+  max-height: 190px;
+  padding: 0 0 10px 0;
+  overflow-y: auto;
+}
+.cart-bill-main {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 10px;
+}
+.cart_product-image {
+  max-height: 100px;
+  max-width: 100px;
+}
+.bill-image-wrapper {
+  flex: 1;
+}
+.cart-bill-infor {
+  margin-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+  flex: 2;
+}
+.cart-bill-price-wrapper span{
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.cart-bill-price{
+  font-weight: 700;
+}
+.cart-bill-unit {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.cart-bill-link {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+.cart-bill-name {
+ 
+  
+}
+.cart-bill-link:hover {
+  color: var(--hv-primary-color);
+}
+.cart-bill-infor {
+  height: 100%;
+  padding: 0 10px;
+}
+.cart-close {
+  flex: 1;
+  height: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+  
+}
+.cart-close i {
+  cursor: pointer;
+  opacity: 0.2;
+}
+.cart-close i:hover {
+  opacity: 1;
+}
+.cart-total {
+  text-align: center;
+    opacity: 0.5;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.8rem;
+}
+.cart-total-price {
+  font-weight: 700;
+
+}
+.cart-btn-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.cart-btn-box a {
+  margin: 10px 0px 4px 0px;
+  width: 100% !important;
+  padding: 10px 0;
+}
