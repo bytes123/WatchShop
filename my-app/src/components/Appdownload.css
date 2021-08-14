@@ -1,0 +1,12 @@
+.app__download {
+  display: flex;
+}
+.app__download a {
+  text-decoration: none;
+}
+.app__download img {
+  min-width: 135px;
+  height: 40px;
+  padding: 0 10px 0 0;
+  object-fit: cover;
+}
