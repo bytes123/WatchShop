@@ -78,72 +78,7 @@
                                 
                         <li class="category_section-item cart-wrapper">
                    
-                            <a href="" class="category_section-link cart-amount f-same">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="small-circle">
-                                    <?php echo $amoutCartAll ?>
-                                </span> 
-                            </a>
-                            <div class="cart-box mini-box">
-                                    <div class="cart-bill <?php if(sizeof($cart) > 0) { ?> d-block <?php } else { ?> d-none <?php } ?>">
-                                            <div class="cart-bill-wrapper <?php if(sizeof($cart) > 2) { ?> ov-y <?php } ?>">
-                                    <?php foreach ($cart as $i => $bill) { ?>
-                                                <?php  require_once __DIR__ . "/../../public/function/PHP/countCartAmountProduct.php"; 
-                                                        $statementByProductCode->bindValue(':PRODUCT_CODE',$bill['PRODUCT_CODE']);
-                                                        $statementByProductCode->execute();
-                                                        $cartAmountProduct = $statementByProductCode->fetchColumn();
-                                                ?>
-                                                <div class="cart-bill-main">
-                                                <div class="bill-image-wrapper ">
-                                                    <img src="<?php echo $bill['IMAGE']?>" class="cart_product-image" alt="">
-                                                </div>
-                                                <div class="cart-bill-infor">
-                                                    <div class="cart-bill-name">
-                                                        <a href="" class="cart-bill-link">
-                                                            <?php echo $bill['TITLE']?>
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart-bill-price-wrapper">
-                                                        <span class="cart-bill-amount"><?php echo (int) $cartAmountProduct ?> x</span>
-                                                        <span class="cart-bill-price">
-                                                            <?php echo number_format($bill['CURRENT_PRICE'])?>
-                                                         
-                                                        </span>   
-                                                        <span class="cart-bill-unit">
-                                                            đ
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-close">
-                                                    <i class="far fa-times-circle"></i>
-                                                </div>
-                                                </div>
-                                           
-                                    <?php }?>                  
-                                    </div>     
-                                    <div class="cart-total">
-                                        <span class="cart-total-price">Tổng cộng: <?php echo number_format($totalCartPrice) ?></span>
-                                        <span class="text-decoration-underline fw-bold">đ</span>
-                                    </div>  
-                                    <div class="cart-btn-box">
-                                        <a href="" class="btn cart-bill-btn">
-                                            XEM GIỎ HÀNG
-                                        </a>  
-                                        <a href=""class="btn cart-pay-btn">
-                                            THANH TOÁN
-                                        </a>  
-                                    </div>                              
-                                        </div>
-                                    <div class="cart-empty <?php if(sizeof($cart) > 0) { ?> d-none <?php } else { ?> d-block <?php } ?>">
-                                        <p class="cart-empty-label">
-                                            Chưa có sản phẩm trong giỏ hàng.
-                                        </p>
-                                    </div>
-                                <div class="cart-triangle up-triangle">
-                                    <div class="cart-inner-triangle inner-triangle"></div>
-                                </div>
-
-                            </div>
+                            <?php  require_once __DIR__ . "/../../public/function/PHP/outputCart.php"; ?>
 
                         </li>
                         

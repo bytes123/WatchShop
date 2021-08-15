@@ -56,7 +56,7 @@ require __DIR__ . "/./function/PHP/totalCartPrice.php";
     </div>
    
 </body>
-<script src="function/AJAX/handleCartAdd.js"></script>
+<script src="function/AJAX/handleCart.js"></script>
 <script src="function/JS/handleHeaderScroll.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

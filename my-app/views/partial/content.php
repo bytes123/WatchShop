@@ -22,7 +22,7 @@
 
 
                            
-                            <a method="POST" href="/dongho/?add-to-cart=<?php echo $watch['PRODUCT_CODE'] ?>" product-id="<?php echo $watch['ID'] ?>"  class="cart-add">
+                            <a href="/dongho/?add-to-cart=<?php echo $watch['PRODUCT_CODE'] ?>" data-product_id="<?php echo $watch['ID'] ?>"  class="cart-add">
                                 <strong class="cart-label">
                                     +
                                 </strong>
@@ -112,7 +112,7 @@
 
 
                             
-                            <a method="POST" href="/dongho/?add-to-cart=<?php echo $watch['PRODUCT_CODE'] ?>"  product-id="<?php echo $watch['ID'] ?>" class="cart-add">
+                            <a  href="/dongho/?add-to-cart=<?php echo $watch['PRODUCT_CODE'] ?>"  data-product_id="<?php echo $watch['ID'] ?>" class="cart-add">
                                 <strong class="cart-label">
                                     +
                                 </strong>
